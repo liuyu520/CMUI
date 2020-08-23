@@ -30,6 +30,8 @@
 					<input type="button" class="cm-btn cm-btn-primary" value="重要按钮"> <br>
 					<input type="button" class="cm-btn cm-btn-info" value="信息按钮"> <br>
 					<input type="button" class="cm-btn cm-btn-success" value="成功按钮"> <br>
+					<input type="button" class="cm-btn " onclick="showMask2()" value="遮罩层淡入"> <br>
+					<input type="button" class="cm-btn " onclick="hideMaskLeave()" value="遮罩层淡出"> <br>
 					<select name="" id="">
 						<options>
 							<option value="value1">苹果</option>
@@ -49,5 +51,16 @@
 <script src="node_modules/zepto.js/dist/zepto.min.js"></script>
 <script src="node_modules/cmui-gearbox/dist/gearbox.min.js"></script>
 <script src="./dist/cmui.js"></script>
+
+<script>
+	var showMask2=function () {
+		CMUI.mask.fadeIn();
+		setTimeout(hideMaskLeave,2000)
+	}
+	var hideMaskLeave=function () {
+		CMUI.mask.fadeOut();
+	}
+</script>
+
 </body>
 </html>
