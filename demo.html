@@ -2,26 +2,48 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 	<link rel="stylesheet" href="./dist/cmui.css">
 
 	<title>Title</title>
 </head>
 <body>
-<main>
-	<div>
-		<form class="cm-form" action="">
-			<input type="text"> <br>
-			<input type="button" value="按钮"> <br>
-			<select name="" id="">
-				<options>
-					<option value="value1">苹果</option>
-					<option value="value2">香蕉</option>
-					<option value="value3">菠萝</option>
-				</options>
-			</select>
-		</form>
-	</div>
-</main>
+<article class="subview" id="listing-view">
+	<header>
+		<nav class="cm-nav-bar">
+			<h1 class="cm-nav-bar-title">这是标题</h1>
+			<div class="cm-btn-wrapper cm-nav-bar-left"><a class="cm-btn" href="">返回</a> </div>
+			<div class="cm-btn-wrapper cm-nav-bar-right"><a class="cm-btn" href="">动作按钮</a> </div>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<div>
+				<form class="cm-form" action="">
+					<div class="cm-form-line">
+						<div class="cm-form-ctrl">
+							<input type="text" value="这是文本框">
+						</div>
+					</div>
+					<br>
+					<input type="button" class="cm-btn cm-btn-primary" value="重要按钮"> <br>
+					<input type="button" class="cm-btn cm-btn-info" value="信息按钮"> <br>
+					<input type="button" class="cm-btn cm-btn-success" value="成功按钮"> <br>
+					<select name="" id="">
+						<options>
+							<option value="value1">苹果</option>
+							<option value="value2">香蕉</option>
+							<option value="value3">菠萝</option>
+						</options>
+					</select>
+				</form>
+			</div>
+		</section>
+
+	</main>
+
+</article>
 
 <script src="node_modules/underscore/underscore-min.js"></script>
 <script src="node_modules/zepto.js/dist/zepto.min.js"></script>
